@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{262B3FC1-094F-40FE-AB16-8FC8B84BCB8F}</ProjectGuid>
+    <RootNamespace>LED_DisplayInspect</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
+    <SourcePath>$(SourcePath)</SourcePath>
+    <ExcludePath>$(ExcludePath)</ExcludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\Basler\pylon 3.2\pylonc\bin\Win32;C:\Program Files\Basler\pylon 3.2\pylonc\include;C:\Program Files %28x86%29\Matrox Imaging\MIL\Include;C:\Program Files %28x86%29\FASTECH\EziMOTION_PlusR\Include;C:\Program Files\FASTECH\EziMOTION_PlusR\Include;C:\Program Files\Basler\pylon 3.2\genicam\bin\win32_i86;C:\Program Files\Basler\pylon 3.2\genicam\library\cpp\include;C:\Program Files\Basler\Pylon 3.2\pylonc\include;C:\Program Files\Matrox Imaging\MIL\DLL;C:\Program Files\Matrox Imaging\MIL\Include;C:\Program Files\3D Active Button Magic\Wrappers\cpp.net;./Source/Camera;./Source/Util;./Source/Dialog;./Source/Include;./Source/Grid/Skel;./Source/Grid/include;./Source/Grid/grid;./</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;4005</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>mil.lib;milblob.lib;milim.lib;miledge.lib;milmod.lib;EziMOTIONPlusR.lib;PylonC_MD_VC100.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files\Basler\pylon 3.2\pylonc\bin\Win32;C:\Program Files\Basler\pylon 3.2\pylonc\lib\Win32;C:\Program Files %28x86%29\Matrox Imaging\MIL\LIB;C:\Program Files %28x86%29\FASTECH\EziMOTION_PlusR\Include;C:\Program Files\FASTECH\EziMOTION_PlusR\Include;C:\Program Files\Basler\pylon 3.2\genicam\bin\win32_i86;C:\Program Files\Basler\pylon 3.2\genicam\library\cpp\lib\win32_i86;C:\Program Files\Basler\Pylon 3.2\pylonc\lib\Win32;C:\Program Files\Basler\pylon 3.2\pylon\lib\Win32;C:\Program Files\Matrox Imaging\MIL\LIB;.\source\include\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <StackReserveSize>10485760</StackReserveSize>
+      <HeapReserveSize>20485760</HeapReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Matrox Imaging\MIL\Include;C:\Program Files %28x86%29\FASTECH\EziMOTION_PlusR\Include;C:\Program Files\FASTECH\EziMOTION_PlusR\Include;C:\Program Files\Basler\pylon 3.2\genicam\bin\win32_i86;C:\Program Files\Basler\pylon 3.2\genicam\library\cpp\include;C:\Program Files\Basler\pylon 3.2\pylonC\include;C:\Program Files\Basler\pylon 3.2\pylon\include;C:\Program Files\Matrox Imaging\MIL\DLL;C:\Program Files\Matrox Imaging\MIL\Include;C:\Program Files\3D Active Button Magic\Wrappers\cpp.net;./Source/Camera;./Source/Util;./Source/Dialog;./Source/Include;./Source/Grid/Skel;./Source/Grid/include;./Source/Grid/grid;./</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>4819;4005</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Matrox Imaging\MIL\LIB;C:\Program Files %28x86%29\FASTECH\EziMOTION_PlusR\Include;C:\Program Files\FASTECH\EziMOTION_PlusR\Include;C:\Program Files\Basler\pylon 3.2\genicam\bin\win32_i86;C:\Program Files\Basler\pylon 3.2\genicam\library\cpp\lib\win32_i86;C:\Program Files\Basler\pylon 3.2\pylonC\lib\Win32;C:\Program Files\Basler\pylon 3.2\pylon\lib\Win32;C:\Program Files\Matrox Imaging\MIL\LIB;.\source\include\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mil.lib;milblob.lib;milim.lib;miledge.lib;milmod.lib;EziMOTIONPlusR.lib;PylonC_MD_VC100.lib</AdditionalDependencies>
+      <StackReserveSize>10485760</StackReserveSize>
+      <HeapReserveSize>10485760</HeapReserveSize>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\bitmap_i.bmp" />
+    <None Include="res\bmp00001.bmp" />
+    <None Include="res\bmp00002.bmp" />
+    <None Include="res\bmp00003.bmp" />
+    <None Include="res\bmp00004.bmp" />
+    <None Include="res\bmp00005.bmp" />
+    <None Include="res\bmp00006.bmp" />
+    <None Include="res\bmp00007.bmp" />
+    <None Include="res\LED_DisplayInspect.ico" />
+    <None Include="res\LED_DisplayInspect.rc2" />
+    <None Include="res\LOGO_Areum Soltek.bmp" />
+    <None Include="res\PLSYN.ico" />
+    <None Include="res\trisys.bmp" />
+    <None Include="ToDo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LED_DisplayInspect.h" />
+    <ClInclude Include="LED_DisplayInspectDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Source\Camera\BaslerManage.h" />
+    <ClInclude Include="Source\Camera\MilManage.h" />
+    <ClInclude Include="Source\Dialog\DialogChangePassword.h" />
+    <ClInclude Include="Source\Dialog\DialogData.h" />
+    <ClInclude Include="Source\Dialog\DialogImageRect.h" />
+    <ClInclude Include="Source\Dialog\DialogJog.h" />
+    <ClInclude Include="Source\Dialog\DialogManual.h" />
+    <ClInclude Include="Source\Dialog\DialogModel.h" />
+    <ClInclude Include="Source\Dialog\DialogNgView.h" />
+    <ClInclude Include="Source\Dialog\DialogTeach.h" />
+    <ClInclude Include="Source\Dialog\DialogVerify.h" />
+    <ClInclude Include="Source\Grid\Include\UG64Bit.h" />
+    <ClInclude Include="Source\Grid\Include\UGCBType.h" />
+    <ClInclude Include="Source\Grid\Include\UGCell.h" />
+    <ClInclude Include="Source\Grid\Include\ugceltyp.h" />
+    <ClInclude Include="Source\Grid\Include\UGCnrBtn.h" />
+    <ClInclude Include="Source\Grid\Include\UGCTarrw.h" />
+    <ClInclude Include="Source\Grid\Include\UGCtrl.h" />
+    <ClInclude Include="Source\Grid\Include\ugdefine.h" />
+    <ClInclude Include="Source\Grid\Include\UGDLType.h" />
+    <ClInclude Include="Source\Grid\Include\UGDrgDrp.h" />
+    <ClInclude Include="Source\Grid\Include\UGDrwHnt.h" />
+    <ClInclude Include="Source\Grid\Include\UGDtaSrc.h" />
+    <ClInclude Include="Source\Grid\Include\UGEdit.h" />
+    <ClInclude Include="Source\Grid\Include\UGEditBase.h" />
+    <ClInclude Include="Source\Grid\Include\ugformat.h" />
+    <ClInclude Include="Source\Grid\Include\uggdinfo.h" />
+    <ClInclude Include="Source\Grid\Include\UGGrid.h" />
+    <ClInclude Include="Source\Grid\Include\UGHint.h" />
+    <ClInclude Include="Source\Grid\Include\ughscrol.h" />
+    <ClInclude Include="Source\Grid\Include\uglstbox.h" />
+    <ClInclude Include="Source\Grid\Include\UGMEdit.h" />
+    <ClInclude Include="Source\Grid\Include\UGMemMan.h" />
+    <ClInclude Include="Source\Grid\Include\UGMultiS.h" />
+    <ClInclude Include="Source\Grid\Include\ugprint.h" />
+    <ClInclude Include="Source\Grid\Include\ugptrlst.h" />
+    <ClInclude Include="Source\Grid\Include\ugsidehd.h" />
+    <ClInclude Include="Source\Grid\Include\UGStrOp.h" />
+    <ClInclude Include="Source\Grid\Include\ugstruct.h" />
+    <ClInclude Include="Source\Grid\Include\ugtab.h" />
+    <ClInclude Include="Source\Grid\Include\UGTopHdg.h" />
+    <ClInclude Include="Source\Grid\Include\ugvscrol.h" />
+    <ClInclude Include="Source\Grid\Include\ugxpthemes.h" />
+    <ClInclude Include="Source\Grid\Skel\MyCUG.h" />
+    <ClInclude Include="Source\OCX\btnenh.h" />
+    <ClInclude Include="Source\Util\DialogLogAlarm.h" />
+    <ClInclude Include="Source\Util\DialogNumberBox.h" />
+    <ClInclude Include="Source\Util\DialogParameterLock.h" />
+    <ClInclude Include="Source\Util\DialogProcessBar.h" />
+    <ClInclude Include="Source\Util\DialogTextBox.h" />
+    <ClInclude Include="Source\Util\dRect.h" />
+    <ClInclude Include="Source\Util\SerialPort.h" />
+    <ClInclude Include="Source\Util\_CtrlTracker.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TypeDef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LED_DisplayInspect.cpp" />
+    <ClCompile Include="LED_DisplayInspectDlg.cpp" />
+    <ClCompile Include="Source\Camera\BaslerManage.cpp" />
+    <ClCompile Include="Source\Camera\MilManage.cpp" />
+    <ClCompile Include="Source\Dialog\DialogChangePassword.cpp" />
+    <ClCompile Include="Source\Dialog\DialogData.cpp" />
+    <ClCompile Include="Source\Dialog\DialogImageRect.cpp" />
+    <ClCompile Include="Source\Dialog\DialogJog.cpp" />
+    <ClCompile Include="Source\Dialog\DialogManual.cpp" />
+    <ClCompile Include="Source\Dialog\DialogModel.cpp" />
+    <ClCompile Include="Source\Dialog\DialogNgView.cpp" />
+    <ClCompile Include="Source\Dialog\DialogTeach.cpp" />
+    <ClCompile Include="Source\Dialog\DialogVerify.cpp" />
+    <ClCompile Include="Source\Grid\grid\UGCBType.cpp" />
+    <ClCompile Include="Source\Grid\grid\UGCell.cpp" />
+    <ClCompile Include="Source\Grid\grid\UGCelTyp.cpp" />
+    <ClCompile Include="Source\Grid\grid\UGCnrBtn.cpp" />
+    <ClCompile Include="Source\Grid\grid\UGCTarrw.cpp" />
+    <ClCompile Include="Source\Grid\grid\UGCtrl.cpp" />
+    <ClCompile Include="Source\Grid\grid\UGDLType.cpp" />
+    <ClCompile Include="Source\Grid\grid\UGDrgDrp.cpp" />
+    <ClCompile Include="Source\Grid\grid\UGDrwHnt.cpp" />
+    <ClCompile Include="Source\Grid\grid\UGDtaSrc.cpp" />
+    <ClCompile Include="Source\Grid\grid\UGEdit.cpp" />
+    <ClCompile Include="Source\Grid\grid\UGEditBase.cpp" />
+    <ClCompile Include="Source\Grid\grid\ugformat.cpp" />
+    <ClCompile Include="Source\Grid\grid\uggdinfo.cpp" />
+    <ClCompile Include="Source\Grid\grid\UGGrid.cpp" />
+    <ClCompile Include="Source\Grid\grid\UGHint.cpp" />
+    <ClCompile Include="Source\Grid\grid\ughscrol.cpp" />
+    <ClCompile Include="Source\Grid\grid\ugLstBox.cpp" />
+    <ClCompile Include="Source\Grid\grid\UGMEdit.cpp" />
+    <ClCompile Include="Source\Grid\grid\UGMemMan.cpp" />
+    <ClCompile Include="Source\Grid\grid\UGMultiS.cpp" />
+    <ClCompile Include="Source\Grid\grid\ugprint.cpp" />
+    <ClCompile Include="Source\Grid\grid\ugptrlst.cpp" />
+    <ClCompile Include="Source\Grid\grid\ugsidehd.cpp" />
+    <ClCompile Include="Source\Grid\grid\UGStrOp.cpp" />
+    <ClCompile Include="Source\Grid\grid\ugtab.cpp" />
+    <ClCompile Include="Source\Grid\grid\UGTopHdg.cpp" />
+    <ClCompile Include="Source\Grid\grid\ugvscrol.cpp" />
+    <ClCompile Include="Source\Grid\grid\UGXPThemes.cpp" />
+    <ClCompile Include="Source\Grid\Skel\MyCUG.cpp" />
+    <ClCompile Include="Source\OCX\btnenh.cpp" />
+    <ClCompile Include="Source\Util\DialogLogAlarm.cpp" />
+    <ClCompile Include="Source\Util\DialogNumberBox.cpp" />
+    <ClCompile Include="Source\Util\DialogParameterLock.cpp" />
+    <ClCompile Include="Source\Util\DialogProcessBar.cpp" />
+    <ClCompile Include="Source\Util\DialogTextBox.cpp" />
+    <ClCompile Include="Source\Util\dRect.cpp" />
+    <ClCompile Include="Source\Util\SerialPort.cpp" />
+    <ClCompile Include="Source\Util\_CtrlTracker.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LED_DisplayInspect.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="LED_DisplayInspect.rc" _x007B_40B5CE81-C5A8-11D2-8183-00002440DFD8_x007D_="CBtnenhctrl" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

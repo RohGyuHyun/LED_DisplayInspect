@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{0a68ce72-c7e2-4afb-9eee-25fdd743760c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OCX">
+      <UniqueIdentifier>{8afd13f8-c039-4f09-8125-5d7e5cb4f2d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{f8d3fd09-6aa1-45de-afba-4e2d86881f51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog">
+      <UniqueIdentifier>{01ae46fc-ef30-4775-ab58-271f66cf5394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Grid">
+      <UniqueIdentifier>{8ca349ac-0ebb-4e80-8e58-095cf340f913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Grid\Include">
+      <UniqueIdentifier>{1c8c9708-22c4-45d5-acbb-6d7fe6b2c33e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Grid\Skel">
+      <UniqueIdentifier>{228ab269-0f9b-4692-b2fb-5d63747355e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Grid\grid">
+      <UniqueIdentifier>{28aef193-96e6-414b-9e23-7651196ee6b2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\LED_DisplayInspect.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\LED_DisplayInspect.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="ToDo.txt" />
+    <None Include="res\bitmap_i.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\bitmap1.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\trisys.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\bmp00001.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\bmp00002.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\LOGO_Areum Soltek.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\PLSYN.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\bmp00003.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\bmp00004.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\bmp00005.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\bmp00006.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\bmp00007.bmp">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LED_DisplayInspect.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="LED_DisplayInspectDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\OCX\btnenh.h">
+      <Filter>OCX</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Util\DialogNumberBox.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Util\DialogTextBox.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Dialog\DialogImageRect.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Util\_CtrlTracker.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Dialog\DialogTeach.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeDef.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Camera\BaslerManage.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Camera\MilManage.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Dialog\DialogManual.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Util\SerialPort.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Dialog\DialogJog.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Dialog\DialogModel.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Dialog\DialogData.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\UGCBType.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\UGCell.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\ugceltyp.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\UGCnrBtn.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\UGCTarrw.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\UGCtrl.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\ugdefine.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\UGDLType.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\UGDrgDrp.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\UGDrwHnt.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\UGDtaSrc.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\UGEdit.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\UGEditBase.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\ugformat.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\uggdinfo.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\UGGrid.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\UGHint.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\ughscrol.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\uglstbox.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\UGMEdit.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\UGMemMan.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\UGMultiS.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\ugprint.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\ugptrlst.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\ugsidehd.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\UGStrOp.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\ugstruct.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\ugtab.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\UGTopHdg.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\ugvscrol.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\ugxpthemes.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Include\UG64Bit.h">
+      <Filter>Grid\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Grid\Skel\MyCUG.h">
+      <Filter>Grid\Skel</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Util\DialogLogAlarm.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Util\DialogParameterLock.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Util\dRect.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Util\DialogProcessBar.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Dialog\DialogVerify.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Dialog\DialogNgView.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Dialog\DialogChangePassword.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LED_DisplayInspect.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LED_DisplayInspectDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\OCX\btnenh.cpp">
+      <Filter>OCX</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Util\DialogTextBox.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Util\DialogNumberBox.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Dialog\DialogImageRect.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Util\_CtrlTracker.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Dialog\DialogTeach.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Camera\BaslerManage.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Camera\MilManage.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Dialog\DialogManual.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Util\SerialPort.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Dialog\DialogJog.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Dialog\DialogModel.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Dialog\DialogData.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\UGDrwHnt.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\UGDtaSrc.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\UGEdit.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\UGEditBase.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\ugformat.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\uggdinfo.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\UGGrid.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\UGHint.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\ughscrol.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\ugLstBox.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\UGMEdit.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\UGMemMan.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\UGMultiS.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\ugprint.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\ugptrlst.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\ugsidehd.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\UGStrOp.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\ugtab.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\UGTopHdg.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\ugvscrol.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\UGXPThemes.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\UGCBType.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\UGCell.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\UGCelTyp.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\UGCnrBtn.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\UGCTarrw.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\UGCtrl.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\UGDLType.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\grid\UGDrgDrp.cpp">
+      <Filter>Grid\grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Grid\Skel\MyCUG.cpp">
+      <Filter>Grid\Skel</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Util\DialogLogAlarm.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Util\DialogParameterLock.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Util\dRect.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Util\DialogProcessBar.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Dialog\DialogVerify.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Dialog\DialogNgView.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Dialog\DialogChangePassword.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LED_DisplayInspect.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

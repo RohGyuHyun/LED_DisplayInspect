@@ -1,0 +1,42 @@
+
+<< History >>
+
+20160819 by
+	- 기본 UI 및 프로젝트 구성
+
+
+
+
+
+
+<< To Do >>
+- Tracker 구현
+- 이미지 확대/축소 및 기타 기능
+- Model 관리 구현
+- Ez-Servo
+- Camera
+- Inspection
+- Sequence
+
+
+
+20160824 ngh
+	- Tracker 구현
+	- 이미지 확대/축소 및 기타 기능
+	- Camera
+	- I/O UI 구현
+
+20160829 ngh
+	- I/O 구현 중(Read, Write)
+	- Ez-Servo 구현(connect, close, move, stop, state)
+	- Motion UI 구현 중
+
+20160831 ngh
+	- Model 관리 구현 완
+	- I/O 구현 완
+	- Ez-Servo 구현 완
+	- 위항목 중 I/O, EzServo 테스트 필요
+
+20160901 ngh
+	- Sequence 구현 중
+	- 각 클레스별 Log 작업 완
